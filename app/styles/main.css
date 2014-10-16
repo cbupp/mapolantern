@@ -18,22 +18,36 @@ html {
 }
 .map {
 	width: 800px;
-	height: 600px;
+	height: 616px;
 
     position: absolute;
     top: 0;
     left: 0;
 }
+@media screen {
+    .stencil {
+        width: 800px;
+        height: 616px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-.stencil {
-    width: 800px;
-    height: 600px;
-
-    opacity: .85;
-
-    position: absolute;
-    top: 0;
-    left: 0;
+    .stencil-print {
+        display: none;
+    }
+}
+@media print {
+    .stencil {
+        display: none;
+    }
+    .stencil-print {
+        width: 800px;
+        height: 616px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 .map-application {
