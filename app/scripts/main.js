@@ -11,10 +11,10 @@
 	});
 
 	/* add default stamen tile layer */
-	new L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {
+	new L.tileLayer('http://{s}.sm.mapstack.stamen.com/($ff5f00[@p],(parks,$126600[source-in]),(mapbox-water,$00b688[source-in]),(terrain-lines,$99000f[source-in]),(terrain-labels,$662600[source-in])[soft-light])/{z}/{x}/{y}.png', {
 		minZoom: 0,
 		maxZoom: 18,
-		attribution: 'Map data © <a href="http://www.openstreetmap.org">OpenStreetMap contributors</a>'
+		attribution: 'Tiles by Stamen Design, under CC-BY 3.0. Data © OpenStreetMap contributors, under CC-BY-SA. | Map data © <a href="http://www.openstreetmap.org">OpenStreetMap contributors</a>'
 	}).addTo(map);
 
 }(window, document, L));
