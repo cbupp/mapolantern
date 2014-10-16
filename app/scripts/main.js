@@ -6,8 +6,8 @@
 
 	/* create leaflet map */
 	var map = L.map('map', {
-		center: [52.5377, 13.3958],
-		zoom: 4
+		center: [33.7527,-84.4095],
+		zoom: 12
 	});
 
 	/* add default stamen tile layer */
@@ -17,4 +17,8 @@
 		attribution: 'Tiles by <a href="http://stamen.com/">Stamen Design</a>, under CC-BY 3.0. Data © <a href="http://www.openstreetmap.org">OpenStreetMap contributors</a>'
 	}).addTo(map);
 
+    var map = document.getElementById('map');
+    var stencil = document.getElementById('stencil');
+    var leafletControls = document.querySelectorAll('.leaflet-control-container')[0];
+    map.insertBefore(stencil, leafletControls);
 }(window, document, L));
