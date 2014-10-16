@@ -19,6 +19,8 @@
 
     var map = document.getElementById('map');
     var stencil = document.getElementById('stencil');
+    var stencilPrint = document.getElementById('stencil-print');
     var leafletControls = document.querySelectorAll('.leaflet-control-container')[0];
     map.insertBefore(stencil, leafletControls);
+    map.insertBefore(stencilPrint, leafletControls);
 }(window, document, L));

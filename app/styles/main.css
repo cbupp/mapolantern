@@ -1,28 +1,18 @@
-*,
-*:before,
-*:after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-.group:after {
-	content: "";
-	display: table;
-	clear: both;
-}
+
 body,
 html {
 	font-family: Arial, sans-serif;
 	height: 100%;
     background-color: black;
 }
+.header {
+    margin:auto;
+    width:100%;
+}
 .map {
 	width: 800px;
 	height: 616px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin:auto;
 }
 @media screen {
     .stencil {
@@ -54,7 +44,6 @@ html {
 	height: 100%;
     margin:auto;
     position: relative;
-	padding-top: 50px;
 }
 
 
