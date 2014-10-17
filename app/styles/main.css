@@ -6,8 +6,11 @@ html {
     background-color: black;
 }
 .header {
-    margin:auto;
     width:100%;
+}
+.header img {
+    display:block;
+    margin:auto;
 }
 .map {
 	width: 800px;
@@ -30,6 +33,9 @@ html {
 @media print {
     .stencil {
         display: none;
+    }
+    .leaflet-control-zoom {
+        display:none;
     }
     .stencil-print {
         width: 800px;
